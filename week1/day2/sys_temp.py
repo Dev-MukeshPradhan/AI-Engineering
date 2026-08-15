@@ -25,7 +25,7 @@ message={
     "content": prompt
 }
 messages=[message_system, message]
-# Temperature by default is 0(safe temperatrure)
+# Temperature by default is 0(safe temperatrure), temperature range must be taken between 0 to 2, higher the temperature more creative the response will be
 
 response=client.chat.completions.create(model=model, messages=messages, temperature=1.5)
 #print(response)

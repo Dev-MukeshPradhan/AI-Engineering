@@ -31,6 +31,6 @@ for prompt in prompts:
     #print("###################################################################################")
     
     answer=response.choices[0].message.content
-    #print(answer)
+    print(answer)
     usage=response.usage
     print(f"Prompt: {prompt} --> Prompt tokens : {usage.prompt_tokens} , Completion tokens : {usage.completion_tokens} , Total tokens : {usage.total_tokens} , Finish Reason : {response.choices[0].finish_reason}")

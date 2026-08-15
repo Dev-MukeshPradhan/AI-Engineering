@@ -62,9 +62,12 @@ Preferred Qualifications
 - Strong problem-solving and analytical skills
 - Excellent written and verbal communication skills
 """
+
+
 # ============================================================
 # PYDANTIC MODEL FOR JOB DESCRIPTION
 # ============================================================
+
 
 class JobD(BaseModel):
     role: str
